@@ -108,8 +108,7 @@ The add-to-calendar button snippet is a simple piece of HTML where you fill in y
 
 ##### Example: Change labels in drop-down
 <br />
-```
-<html>
+```<html>
 <head>
 
 <!-- AddEvent script -->
@@ -148,8 +147,7 @@ window.addeventasync = function(){
 
 ##### Example: Remove AddEvent from the drop-down
 <br />
-```
-<html>
+```<html>
 <head>
 
 <!-- AddEvent script -->
@@ -193,8 +191,7 @@ window.addeventasync = function(){
 
 ##### Example: No CSS. Unstyled button
 <br />
-```
-<html>
+```<html>
 <head>
 
 <!-- AddEvent script -->
@@ -233,8 +230,7 @@ to the button code
 
 ##### Example: Show options drop-down on mouseover
 <br />
-```
-<html>
+```<html>
 <head>
 
 <!-- AddEvent script -->
@@ -268,8 +264,7 @@ window.addeventasync = function(){
 
 ##### Example: Sort order of drop-down options
 <br />
-```
-<html>
+```<html>
 <head>
 
 <!-- AddEvent script -->
