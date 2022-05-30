@@ -107,7 +107,7 @@ The add-to-calendar button snippet is a simple piece of HTML where you fill in y
 <br />
 
 ##### Example: Change labels in drop-down
-<br />
+
 ```<html>
 <head>
 
