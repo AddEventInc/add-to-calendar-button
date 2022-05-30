@@ -8,14 +8,13 @@ More than 500 mill events have been added to users calendars using AddEvent._
 
 ### Awesome features
 - Works with **all major calendar services** (Apple, Google Calendar, Outlook, Outlook (online), Office 365, Yahoo)
-- **Use** on websites and apps. For e-mails, use our add-to-calendar links on AddEvent.com
+- **Use** on websites and apps. For e-mails, use our [add-to-calendar links](https://www.addevent.com/solutions/share-events) on AddEvent.com
 - **Time zone and daylight saving time compatible**. Makes sure date/time is correct across time zones.
 - **Touch- and user-friendly**: Designed and tested to work with desktops, tablets and mobile devices. Optimized for touch devices, user-friendly and easy to understand calendar options.
 - **Keyboard Accessible**: Fully keyboard accessible. WAI compliant (W3C). Useful to people with disabilities. Accessibility is required by law in many countries.
 - **No dependencies**: Written in pure javascript. No need to install anything on your server. Using backwards compatible technologies to support older browsers (down to IE6).
 - **Legal**: Fully GDPR, CCPA, and LGPD compatible
 - **Design**: Download a predefined theme or customize the design to fit your needs with simple CSS changes
-
 
 ## Demo
 
@@ -25,35 +24,27 @@ Go to [addevent.github.io/add-to-calendar-button](https://addevent.github.io/add
 
 ## Install
 
-##### Option 1: CDN
-
-1. Include `<script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>` in your HTML (`<head>`) or (`<body>`) section. 
-2. Add your "Add to Calendar" button snippet anywhere on your website (see configuration below)
-3. That's it. You now have a functional "Add to Calendar" button
-
-##### Option 2: Self-hosted
-
-1. **Download** the code from GitHub **or clone** the git repository. Alternatively, you can open up this file `https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js` and copy the contents of the file over to your existing javascript file. An uncompressed version is available here: `https://cdn.addevent.com/libs/atc/1.6.1/atc.original.js`
-
-💥 If you prefer to use a different theme, you can download full examples on this location: 
-https://www.addevent.com/documentation/add-to-calendar-button#anchor-themes
-
-## Configuration
-
 The add-to-calendar button snippet is a simple piece of HTML where you fill in your event details dynamically. Here's a full example you can try out in your browser. 
-
-View more examples and themes on [AddEvent.com](https://www.addevent.com/documentation/add-to-calendar-button)
+💥 View more examples and themes on [AddEvent.com](https://www.addevent.com/documentation/add-to-calendar-button)
 
 ```
 html
 <html>
 <head>
 
-<!-- AddEvent script -->
+<!--
+1. Include below script in your <head> or <body> section -->
+-->
+
+<!-- Button script -->
 <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
 </head>
 <body>
+
+<!--
+2. Add your "Add to Calendar" button snippet anywhere on your website -->
+-->
 
 <!-- Button code -->
 <div title="Add to Calendar" class="addeventatc">
@@ -95,7 +86,7 @@ html
 | method             | `<span class="method">PUBLISH</span>`. If defined, a method parameter is added in the .ics file used by e.g. Outlook and Apple Calendar. If not defined, no method parameter is added in the .ics file. http://www.kanzaki.com/docs/ical/method.html + https://tools.ietf.org/html/rfc2446. Examples of usage: `PUBLISH`, `REQUEST`, `CANCEL`, `REFRESH`. Warning. Use this option only if it serves a purpose in your coding.
 | transp             | `<span class="transp">TRANSPARENT</span>`. Determines whether the event appears as "free" or "busy" on the users calendar. Default value is OPAQUE (busy). Accepted values: `TRANSPARENT` or `OPAQUE`.
 
-#### Button controls (HTML attributes)
+### Button controls (HTML attributes)
 
 | Parameter           | Description
 |:------------------- |:-----------------------------------------------------------
@@ -106,8 +97,8 @@ html
 | data-styling        | `<div class="addeventatc" .. data-styling="none">`. The attribute disables the default CSS. Accepted value: `none`
 | data-intel          | `<div class="addeventatc" .. data-intel="false">`. If we can detect which device the user is on (e.g. an iDevice) it makes sense to automatically select the "Apple" option on click instead of showing the dropdown option. The behavior can be disabled by setting "data-intel" to "false". Accepts: `true` or `false`. Default is true.
 
-#### Button controls (Javascript)
-<br />
+
+### Button controls (Javascript)
 
 ##### Example: Change labels in drop-down
 
@@ -308,7 +299,7 @@ window.addeventasync = function(){
 
 Behind AddEvent, Inc. there is a team of passionate people building event and calendar service software.
 
-With a suite of services ([Share Events](https://www.addevent.com/solutions/share-events), [Collect RSVPs](https://www.addevent.com/solutions/collect-rsvp-events), [Subscription calendar](https://www.addevent.com/solutions/subscription-calendars), [Embeddable calendar](https://www.addevent.com/solutions/embeddable-calendar), [Automated events](https://www.addevent.com/solutions/automated-events)) and their powerful APIs, we power customer communication.
+With a suite of services ([Share Events](https://www.addevent.com/solutions/share-events), [Collect RSVPs](https://www.addevent.com/solutions/collect-rsvp-events), [Subscription calendar](https://www.addevent.com/solutions/subscription-calendars), [Embeddable calendar](https://www.addevent.com/solutions/embeddable-calendar), [Automated events](https://www.addevent.com/solutions/automated-events)) and their powerful APIs, we power customer communication and attendance.
 
 ## Thank you
 * Thousands of customers providing useful feedback and users using cryptic computer/browser setups where the "Add to Calendar" button also needs to work. ❤️
