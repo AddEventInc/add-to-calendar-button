@@ -6,6 +6,8 @@
 Trusted by +150,000 companies around the world. Maintained daily and super reliable.
 More than 500 mill events have been added to users calendars using AddEvent._
 
+<br /><br />
+
 ### Awesome features
 - Works with **all major calendar services** (Apple, Google Calendar, Outlook, Outlook (online), Office 365, Yahoo)
 - **Use** for websites and apps. For e-mails, use our [add-to-calendar links](https://www.addevent.com/solutions/share-events) on AddEvent.com
