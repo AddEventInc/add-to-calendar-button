@@ -146,7 +146,7 @@ window.addeventasync = function(){
 ```
 
 ##### Example: Remove AddEvent from the drop-down
-<br />
+
 ```<html>
 <head>
 
@@ -190,7 +190,7 @@ window.addeventasync = function(){
 ```
 
 ##### Example: No CSS. Unstyled button
-<br />
+
 ```<html>
 <head>
 
@@ -229,7 +229,7 @@ to the button code
 ```
 
 ##### Example: Show options drop-down on mouseover
-<br />
+
 ```<html>
 <head>
 
@@ -263,7 +263,7 @@ window.addeventasync = function(){
 ```
 
 ##### Example: Sort order of drop-down options
-<br />
+
 ```<html>
 <head>
 
