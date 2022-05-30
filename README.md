@@ -8,7 +8,7 @@ More than 500 mill events have been added to users calendars using AddEvent._
 
 ### Awesome features
 - Works with **all major calendar services** (Apple, Google Calendar, Outlook, Outlook (online), Office 365, Yahoo)
-- **Use** on websites and apps. For e-mails, use our [add-to-calendar links](https://www.addevent.com/solutions/share-events) on AddEvent.com
+- **Use** for websites and apps. For e-mails, use our [add-to-calendar links](https://www.addevent.com/solutions/share-events) on AddEvent.com
 - **Time zone and daylight saving time compatible**. Makes sure date/time is correct across time zones.
 - **Touch- and user-friendly**: Designed and tested to work with desktops, tablets and mobile devices. Optimized for touch devices, user-friendly and easy to understand calendar options.
 - **Keyboard Accessible**: Fully keyboard accessible. WAI compliant (W3C). Useful to people with disabilities. Accessibility is required by law in many countries.
