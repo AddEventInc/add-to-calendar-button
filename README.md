@@ -90,12 +90,12 @@ html
 
 | Parameter           | Description
 |:------------------- |:-----------------------------------------------------------
-| data-direct         | `<div class="addeventatc" .. data-direct="google">`. The attribute disables the dropdown and makes the button a direct link to the service specified. Accepted values: `apple` or `google` or `office365` or `outlook` or `outlookcom` or `yahoo`
-| data-dropdown-x     | `<div class="addeventatc" .. data-dropdown-x="left">`. Control the horizontal position of the dropdown. Accepted values: `left` or `right` or `auto`
-| data-dropdown-y     | `<div class="addeventatc" .. data-dropdown-y="up">`. Control the vertical position of the dropdown. Accepted values: `up` or `down` or `auto`
-| data-render         | `<div class="addeventatc" .. data-render="inline-buttons">`. The attribute ensures that the options are generated and displayed at load. The attribute furthermore disables the default CSS. Accepted value: `inline-buttons`
-| data-styling        | `<div class="addeventatc" .. data-styling="none">`. The attribute disables the default CSS. Accepted value: `none`
-| data-intel          | `<div class="addeventatc" .. data-intel="false">`. If we can detect which device the user is on (e.g. an iDevice) it makes sense to automatically select the "Apple" option on click instead of showing the dropdown option. The behavior can be disabled by setting "data-intel" to "false". Accepts: `true` or `false`. Default is true.
+| data-direct         | `<div class="addeventatc" .. data-direct="google">`<br /><br /> The attribute disables the dropdown and makes the button a direct link to the service specified. <br /><br />Accepted values: `apple` or `google` or `office365` or `outlook` or `outlookcom` or `yahoo`
+| data-dropdown-x     | `<div class="addeventatc" .. data-dropdown-x="left">`<br /><br /> Control the horizontal position of the dropdown. <br /><br />Accepted values: `left` or `right` or `auto`
+| data-dropdown-y     | `<div class="addeventatc" .. data-dropdown-y="up">`<br /><br /> Control the vertical position of the dropdown. <br /><br />Accepted values: `up` or `down` or `auto`
+| data-render         | `<div class="addeventatc" .. data-render="inline-buttons">`<br /><br /> The attribute ensures that the options are generated and displayed at load. The attribute furthermore disables the default CSS. <br /><br />Accepted value: `inline-buttons`
+| data-styling        | `<div class="addeventatc" .. data-styling="none">`<br /><br /> The attribute disables the default CSS. <br /><br />Accepted value: `none`
+| data-intel          | `<div class="addeventatc" .. data-intel="false">`<br /><br /> If we can detect which device the user is on (e.g. an iDevice) it makes sense to automatically select the "Apple" option on click instead of showing the dropdown option. The behavior can be disabled by setting "data-intel" to "false". <br /><br />Accepts: `true` or `false`. Default is true.
 
 
 ### Button controls (Javascript)
