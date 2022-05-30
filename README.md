@@ -42,7 +42,10 @@ https://www.addevent.com/documentation/add-to-calendar-button#anchor-themes
 
 The add-to-calendar button snippet is a simple piece of HTML where you fill in your event details dynamically. Here's a full example you can try out in your browser. 
 
-```html
+View more examples and themes on [AddEvent.com](https://www.addevent.com/documentation/add-to-calendar-button)
+
+```
+html
 <html>
 <head>
 
@@ -70,8 +73,8 @@ The add-to-calendar button snippet is a simple piece of HTML where you fill in y
 #### Parameters
 
 | Parameter           | Description
-|:------------------- |:-----------------------------------------------------------
-| start 💥            | **REQUIRED**. `<span class="start">06/13/2022 03:00 PM</span>`. Start date of the event. Accepts most date/time formats, e.g. `06/13/2022 03:00 PM` (12-hour format) or `13-06-2022 15:00` (24-hour format). Use numeric values to describe the date, e.g. "06/13/2022" and not textual, e.g. "June 13th, 2022". Dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-, the date string is parsed as y-m-d. To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates. Date examples: `06/13/2022 03:00 PM` or `13-06-2022 15:00` or `2022/06/13 03:00 PM` or `2022-06-13 15:00`
+|:------------------ |:-----------------------------------------------------------
+| start 💥           | **REQUIRED**. `<span class="start">06/13/2022 03:00 PM</span>`. Start date of the event. Accepts most date/time formats, e.g. `06/13/2022 03:00 PM` (12-hour format) or `13-06-2022 15:00` (24-hour format). Use numeric values to describe the date, e.g. "06/13/2022" and not textual, e.g. "June 13th, 2022". Dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-, the date string is parsed as y-m-d. To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates. Date examples: `06/13/2022 03:00 PM` or `13-06-2022 15:00` or `2022/06/13 03:00 PM` or `2022-06-13 15:00`
 | end                | `<span class="end">06/13/2022 05:00 PM</span>`. End date of the event. Accepts most date/time formats, e.g. `06/13/2022 05:00 PM` (12-hour format) or `13-06-2022 17:00` (24-hour format). Use numeric values to describe the date, e.g. "06/13/2022" and not textual, e.g. "June 13th, 2022". Dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-, the date string is parsed as y-m-d. To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates. Date examples: `06/13/2022 05:00 PM` or `13-06-2022 17:00` or `2022/06/13 05:00 PM` or `2022-06-13 17:00`. If end is not defined, the end date is automatically set to start date plus one hour.
 | timezone           | `<span class="timezone">Europe/Paris</span>`. The events time zone, e.g. Europe/Paris or America/Los_Angeles. If timezone is applied (highly recommended), date/time will be converted to Zulu time / GMT / UTC. If timezone is not applied, date/time will be parsed as is (fluid date/time). ** Please notice: We're currently using the Microsoft Events API for inserting events into Outlook.com and Office 365. Those options does not allow fluid time and a timezone is required. Explanation: The timezone parameter makes sure the date/time is correct no matter if you are in New York or Sydney. If your event has users from multiple time zones in the world, it's highly recommended to use the parameter.
 | title 💥           | **REQUIRED**. `<span class="title">Title of event</span>`. Title of the event. Single line string.
@@ -108,7 +111,8 @@ The add-to-calendar button snippet is a simple piece of HTML where you fill in y
 
 ##### Example: Change labels in drop-down
 
-```<html>
+```
+<html>
 <head>
 
 <!-- AddEvent script -->
@@ -147,7 +151,8 @@ window.addeventasync = function(){
 
 ##### Example: Remove AddEvent from the drop-down
 
-```<html>
+```
+<html>
 <head>
 
 <!-- AddEvent script -->
@@ -191,7 +196,8 @@ window.addeventasync = function(){
 
 ##### Example: No CSS. Unstyled button
 
-```<html>
+```
+<html>
 <head>
 
 <!-- AddEvent script -->
@@ -230,7 +236,8 @@ to the button code
 
 ##### Example: Show options drop-down on mouseover
 
-```<html>
+```
+<html>
 <head>
 
 <!-- AddEvent script -->
@@ -264,7 +271,8 @@ window.addeventasync = function(){
 
 ##### Example: Sort order of drop-down options
 
-```<html>
+```
+<html>
 <head>
 
 <!-- AddEvent script -->
@@ -296,27 +304,17 @@ window.addeventasync = function(){
 </html>
 ```
 
+## Who we are
 
-## Contributing
+Behind AddEvent, Inc. there is a team of passionate people building event and calendar service software.
 
-Anyone is welcome to contribute, but mind the [guidelines](.github/CONTRIBUTING.md):
-
-* [Bug reports](.github/CONTRIBUTING.md#bugs)
-* [Feature requests](.github/CONTRIBUTING.md#features)
-* [Pull requests](.github/CONTRIBUTING.md#pull-requests)
-
-**IMPORTANT NOTE:** Run `npm install` and `npm run build` to create the minified js and css file, its sourcemap files as well as the npm_dist/ folder and content!
-
-<br />
-
-## 📃 License
-
-The code is available under the [MIT license (with “Commons Clause” License Condition v1.0)](LICENSE.txt).
-
-<br />
+With a suite of services ([Share Events](https://www.addevent.com/solutions/share-events), [Collect RSVPs](https://www.addevent.com/solutions/collect-rsvp-events), [Subscription calendar](https://www.addevent.com/solutions/subscription-calendars), [Embeddable calendar](https://www.addevent.com/solutions/embeddable-calendar), [Automated events](https://www.addevent.com/solutions/automated-events)) and their powerful APIs, we power customer communication.
 
 ## Thank you
 * Thousands of customers providing useful feedback and users using cryptic computer/browser setups where the "Add to Calendar" button also needs to work. ❤️
-* Millions of end-users using our services on a daily basis ❤️
-* DEV team on AddEvent.com for daily maintaining code and service
+* Millions of end-users using and breaking our services on a daily basis ❤️
+* DEV team on AddEvent.com for daily making sure everything is in mint condition
 * [Michael Nilsson](https://nilsson.co) Original creator (Denmark)
+
+## Contact us
+- Send us an email at support@addevent.com
