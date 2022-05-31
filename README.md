@@ -63,7 +63,9 @@ html
 </html>
 ```
 
-#### Parameters
+<br />
+
+### Parameters
 
 | Parameter           | Description
 |:------------------ |:-----------------------------------------------------------
@@ -78,7 +80,7 @@ html
 | all_day_event      | `<span class="all_day_event">true</span>` <br /><br />All day event. Accepts `true` or `false`.
 | date_format        | `<span class="date_format">MM/DD/YYYY</span>` <br /><br />The format of the date in start and end. Accepts the values `MM/DD/YYYY` or `DD/MM/YYYY` only. Lets the engine know how to handle the date, e.g. 12-hour format (MM/DD/YYYY) or 24-hour format (DD/MM/YYYY).
 | alarm_reminder     | `<span class="alarm_reminder">15</span>` <br /><br />Event reminder. Trigger an event reminder e.g. "15" minutes before the event starts. Accepted input: Number. Example: Reminder "15" minutes before event starts = 15 or one day before event starts : 60 minutes x 24 hours = 1440. <br /><br />Event reminders are currently supported by: Apple Calendar, Google Calendar (using Google Events API), Outlook, Outlook.com (using Microsoft Events API)
-| recurring          | `<span class="recurring">FREQ=DAILY;INTERVAL=2;COUNT=5</span>` <br /><br />Make the event repeat for a number of times. Please notice: The start date/time must match the recurrence rule in order to work in strict calendar systems like Outlook and Apple Calendar. <br /><br />Recurring rules are currently supported by: Apple Calendar, Google Calendar (using "Direct" and Google Events API), Office 365 (using the Microsoft Events API), Outlook, Outlook.com (using Microsoft Events API). On AddEvent.com you can find a brilliant RRule generator: https://www.addevent.com/documentation/add-to-calendar-button
+| recurring          | `<span class="recurring">FREQ=DAILY;INTERVAL=2;COUNT=5</span>` <br /><br />Make the event repeat for a number of times. Please notice: The start date/time must match the recurrence rule in order to work in strict calendar systems like Outlook and Apple Calendar. <br /><br />Recurring rules are currently supported by: Apple Calendar, Google Calendar (using "Direct" and Google Events API), Office 365 (using the Microsoft Events API), Outlook, Outlook.com (using Microsoft Events API). <br /><br />On AddEvent.com you can find a brilliant RRule generator: https://www.addevent.com/documentation/add-to-calendar-button
 | calname            | `<span class="calname">use-title</span>` <br /><br />Custom filenaming of the .ics file used for e.g. Outlook and Apple Calendar. If not specified the name defaults to "event.ics". Use the phrase use-title to use the title from the title parameter or enter a custom filename.
 | attendees          | `<span class="attendees">joe@example.com</span>` <br /><br />Add one or multiple attendees (pre-populated) to the event. Enables the pre-populated attendee(s) to get a response from the attendee. Separate multiple attendees (email addresses) with a comma. <br /><br />Example: `<span class="attendees">joe@example.com,jack@example.com</span>`
 | uid                | `<span class="uid">my-unique-id123@addevent.com</span>` <br /><br />Define your own UID for the event. If not specified, a system UID is generated. Please notice; Yahoo Calendar reports error 404 if an UID is defined. We therefore don't include UID's in Yahoo Calendar. Warning. Use this option only if it serves a purpose in your coding.
@@ -87,6 +89,8 @@ html
 | client             | `<span class="client">ACCOUNT-CLIENT-ID</span>` <br /><br />The client field refers to your account ID. If you want the domain on which your "Add to Calendar" button appears to be automatically added to your accounts list of domains, then include the client tag in the button code.
 | method             | `<span class="method">PUBLISH</span>` <br /><br />If defined, a method parameter is added in the .ics file used by e.g. Outlook and Apple Calendar. If not defined, no method parameter is added in the .ics file. http://www.kanzaki.com/docs/ical/method.html + https://tools.ietf.org/html/rfc2446. <br /><br />Examples of usage: `PUBLISH`, `REQUEST`, `CANCEL`, `REFRESH`. <br /><br />Warning. Use this option only if it serves a purpose in your coding.
 | transp             | `<span class="transp">TRANSPARENT</span>` <br /><br />Determines whether the event appears as "free" or "busy" on the users calendar. Default value is OPAQUE (busy). <br /><br />Accepted values: `TRANSPARENT` or `OPAQUE`.
+
+<br />
 
 ### Button controls (HTML attributes)
 
@@ -99,6 +103,7 @@ html
 | data-styling        | `<div class="addeventatc" .. data-styling="none">`<br /><br /> The attribute disables the default CSS. <br /><br />Accepted value: `none`
 | data-intel          | `<div class="addeventatc" .. data-intel="false">`<br /><br /> If we can detect which device the user is on (e.g. an iDevice) it makes sense to automatically select the "Apple" option on click instead of showing the dropdown option. The behavior can be disabled by setting "data-intel" to "false". <br /><br />Accepts: `true` or `false`. Default is true.
 
+<br />
 
 ### Button controls (Javascript)
 
