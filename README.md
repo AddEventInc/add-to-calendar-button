@@ -170,7 +170,7 @@ Or use the AddEvent settings script
 <script type="text/javascript">
 window.addeventasync = function(){
     addeventatc.settings({
-        license : "aoBHPTUgxzkFrUvbhmCa141922"
+        license : "YOUR-CLIENT-ID"
     });
 };
 </script>
