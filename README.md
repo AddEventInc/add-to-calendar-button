@@ -107,8 +107,6 @@ html
 
 ### Button controls (Javascript)
 
-<br />
-
 #### Example: Change labels in drop-down
 
 ```
@@ -149,7 +147,7 @@ window.addeventasync = function(){
 </html>
 ```
 
-##### Example: Remove AddEvent from the drop-down
+#### Example: Remove AddEvent from the drop-down
 
 ```
 <html>
@@ -234,7 +232,7 @@ to the button code
 </html>
 ```
 
-##### Example: Show options drop-down on mouseover
+#### Example: Show options drop-down on mouseover
 
 ```
 <html>
@@ -269,7 +267,7 @@ window.addeventasync = function(){
 </html>
 ```
 
-##### Example: Sort order of drop-down options
+#### Example: Sort order of drop-down options
 
 ```
 <html>
