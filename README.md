@@ -16,6 +16,7 @@ More than 500 mill events have been added to users calendars using AddEvent._
 - **No dependencies**: Written in pure javascript. No need to install anything on your server. Using backwards compatible technologies to support older browsers (down to IE6).
 - **Legal**: Fully GDPR, CCPA, and LGPD compatible
 - **Design**: Download a predefined theme or customize the design to fit your needs with simple CSS changes
+- **Centralized end-point**: Historically the calendar vendors update/change their calendar software one or twice per year. With AddEvent as a centralized end-point, it's our task to make sure everything is working and not your task. 
 - **Free**: It's free, super realiable, and proven by millions of people ❤️ (we also offer a paid version with awesome technical support)
 
 ## Demo
