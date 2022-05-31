@@ -192,7 +192,7 @@ window.addeventasync = function(){
 </html>
 ```
 
-##### Example: No CSS. Unstyled button
+#### Example: No CSS. Unstyled button
 
 ```
 <html>
