@@ -16,7 +16,7 @@ More than 500 mill events have been added to users calendars using AddEvent._
 - **No dependencies**: Written in pure javascript. No need to install anything on your server. Using backwards compatible technologies to support older browsers (down to IE6).
 - **Legal**: Fully GDPR, CCPA, and LGPD compatible
 - **Design**: Download a predefined theme or customize the design to fit your needs with simple CSS changes
-- **Free**: It's free, super realiable, and proven by millions of people ❤️
+- **Free**: It's free, super realiable, and proven by millions of people ❤️ (we also offer a paid version with awesome technical support)
 
 ## Demo
 
