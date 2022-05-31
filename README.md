@@ -51,8 +51,8 @@ html
 <!-- Button code -->
 <div title="Add to Calendar" class="addeventatc">
     Add to Calendar
-    <span class="start">06/13/2022 08:00 AM</span>
-    <span class="end">06/13/2022 10:00 AM</span>
+    <span class="start">10/20/2022 08:00 AM</span>
+    <span class="end">10/20/2022 10:00 AM</span>
     <span class="timezone">America/Los_Angeles</span>
     <span class="title">Summary of the event</span>
     <span class="description">Description of the event</span>
@@ -69,8 +69,8 @@ html
 
 | Parameter           | Description
 |:------------------ |:-----------------------------------------------------------
-| start 💥           | **REQUIRED**. `<span class="start">06/13/2022 03:00 PM</span>` <br /><br />Start date of the event. Accepts most date/time formats, e.g. `06/13/2022 03:00 PM` (12-hour format) or `13-06-2022 15:00` (24-hour format). Use numeric values to describe the date, e.g. "06/13/2022" and not textual, e.g. "June 13th, 2022". Dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-, the date string is parsed as y-m-d. To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates. <br /><br />Date examples: `06/13/2022 03:00 PM` or `13-06-2022 15:00` or `2022/06/13 03:00 PM` or `2022-06-13 15:00`
-| end                | `<span class="end">06/13/2022 05:00 PM</span>` <br /><br />End date of the event. Accepts most date/time formats, e.g. `06/13/2022 05:00 PM` (12-hour format) or `13-06-2022 17:00` (24-hour format). Use numeric values to describe the date, e.g. "06/13/2022" and not textual, e.g. "June 13th, 2022". Dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-, the date string is parsed as y-m-d. To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates. <br /><br />Date examples: `06/13/2022 05:00 PM` or `13-06-2022 17:00` or `2022/06/13 05:00 PM` or `2022-06-13 17:00`. If end is not defined, the end date is automatically set to start date plus one hour.
+| start 💥           | **REQUIRED**. `<span class="start">10/20/2022 03:00 PM</span>` <br /><br />Start date of the event. Accepts most date/time formats, e.g. `10/20/2022 03:00 PM` (12-hour format) or `20-10-2022 15:00` (24-hour format). Use numeric values to describe the date, e.g. "10/20/2022" and not textual, e.g. "October 20th, 2022". Dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-, the date string is parsed as y-m-d. To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates. <br /><br />Date examples: `10/20/2022 03:00 PM` or `20-10-2022 15:00` or `2022/10/20 03:00 PM` or `2022-10-20 15:00`
+| end                | `<span class="end">10/20/2022 05:00 PM</span>` <br /><br />End date of the event. Accepts most date/time formats, e.g. `10/20/2022 05:00 PM` (12-hour format) or `20-10-2022 17:00` (24-hour format). Use numeric values to describe the date, e.g. "10/20/2022" and not textual, e.g. "October 20th, 2022". Dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-, the date string is parsed as y-m-d. To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates. <br /><br />Date examples: `10/20/2022 05:00 PM` or `20-10-2022 17:00` or `2022/10/20 05:00 PM` or `2022-10-20 17:00`. If end is not defined, the end date is automatically set to start date plus one hour.
 | timezone           | `<span class="timezone">Europe/Paris</span>` <br /><br />The events time zone, e.g. Europe/Paris or America/Los_Angeles. If timezone is applied (highly recommended), date/time will be converted to Zulu time / GMT / UTC. If timezone is not applied, date/time will be parsed as is (fluid date/time). ** Please notice: We're currently using the Microsoft Events API for inserting events into Outlook.com and Office 365. Those options does not allow fluid time and a timezone is required. Explanation: The timezone parameter makes sure the date/time is correct no matter if you are in New York or Sydney. If your event has users from multiple time zones in the world, it's highly recommended to use the parameter.
 | title 💥           | **REQUIRED**. `<span class="title">Title of event</span>` <br /><br />Title of the event. Single line string.
 | description        | `<span class="description">Description of event</span>` <br /><br />Description of the event. Use `<br>` to separate lines. The field accepts plain text or simplified HTML. Simplified HTML is supported by calendar clients like Outlook and Apple Calendar. If the calendar client does accept HTML, the content of the field is automatically converted into readable text. Keep the description short and to the point. Link to a website for further details if the event description is long. Maximum 500 characters recommended. Reason: Most modern browsers allow an unlimited number of characters to be transferred by the browser. Internet Explorer / Edge only allows ~2000 characters. A 500 characters maximum is recommended to make sure your event is cross browser compatible.
@@ -136,8 +136,8 @@ window.addeventasync = function(){
 <!-- Button code -->
 <div title="Add to Calendar" class="addeventatc">
     Add to Calendar
-    <span class="start">06/13/2022 08:00 AM</span>
-    <span class="end">06/13/2022 10:00 AM</span>
+    <span class="start">10/20/2022 08:00 AM</span>
+    <span class="end">10/20/2022 10:00 AM</span>
     <span class="timezone">America/Los_Angeles</span>
     <span class="title">Summary of the event</span>
     <span class="description">Description of the event</span>
@@ -181,8 +181,8 @@ window.addeventasync = function(){
 <!-- Button code -->
 <div title="Add to Calendar" class="addeventatc">
     Add to Calendar
-    <span class="start">06/13/2022 08:00 AM</span>
-    <span class="end">06/13/2022 10:00 AM</span>
+    <span class="start">10/20/2022 08:00 AM</span>
+    <span class="end">10/20/2022 10:00 AM</span>
     <span class="timezone">America/Los_Angeles</span>
     <span class="title">Summary of the event</span>
     <span class="description">Description of the event</span>
@@ -221,8 +221,8 @@ to the button code
 <!-- Button code -->
 <div title="Add to Calendar" class="addeventatc" data-styling="none">
     Add to Calendar
-    <span class="start">06/13/2022 08:00 AM</span>
-    <span class="end">06/13/2022 10:00 AM</span>
+    <span class="start">10/20/2022 08:00 AM</span>
+    <span class="end">10/20/2022 10:00 AM</span>
     <span class="timezone">America/Los_Angeles</span>
     <span class="title">Summary of the event</span>
     <span class="description">Description of the event</span>
@@ -256,8 +256,8 @@ window.addeventasync = function(){
 <!-- Button code -->
 <div title="Add to Calendar" class="addeventatc">
     Add to Calendar
-    <span class="start">06/13/2022 08:00 AM</span>
-    <span class="end">06/13/2022 10:00 AM</span>
+    <span class="start">10/20/2022 08:00 AM</span>
+    <span class="end">10/20/2022 10:00 AM</span>
     <span class="timezone">America/Los_Angeles</span>
     <span class="title">Summary of the event</span>
     <span class="description">Description of the event</span>
@@ -291,8 +291,8 @@ window.addeventasync = function(){
 <!-- Button code -->
 <div title="Add to Calendar" class="addeventatc">
     Add to Calendar
-    <span class="start">06/13/2022 08:00 AM</span>
-    <span class="end">06/13/2022 10:00 AM</span>
+    <span class="start">10/20/2022 08:00 AM</span>
+    <span class="end">10/20/2022 10:00 AM</span>
     <span class="timezone">America/Los_Angeles</span>
     <span class="title">Summary of the event</span>
     <span class="description">Description of the event</span>
