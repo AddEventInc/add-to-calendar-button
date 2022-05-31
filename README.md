@@ -107,7 +107,9 @@ html
 
 ### Button controls (Javascript)
 
-##### Example: Change labels in drop-down
+<br />
+
+#### Example: Change labels in drop-down
 
 ```
 <html>
