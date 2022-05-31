@@ -10,11 +10,13 @@ More than 500 mill events have been added to users calendars using AddEvent._
 - Works with **all major calendar services** (Apple, Google Calendar, Outlook, Outlook (online), Office 365, Yahoo)
 - **Use** for websites and apps. For e-mails, use our [add-to-calendar links](https://www.addevent.com/solutions/share-events) on AddEvent.com
 - **Time zone and daylight saving time compatible**. Makes sure date/time is correct across time zones.
+- **Supports**: Normal events, recurring events, fluid events, event reminders, include attendees, busy or free state. 
 - **Touch- and user-friendly**: Designed and tested to work with desktops, tablets and mobile devices. Optimized for touch devices, user-friendly and easy to understand calendar options.
 - **Keyboard Accessible**: Fully keyboard accessible. WAI compliant (W3C). Useful to people with disabilities. Accessibility is required by law in many countries.
 - **No dependencies**: Written in pure javascript. No need to install anything on your server. Using backwards compatible technologies to support older browsers (down to IE6).
 - **Legal**: Fully GDPR, CCPA, and LGPD compatible
 - **Design**: Download a predefined theme or customize the design to fit your needs with simple CSS changes
+- **Free**: It's free, super realiable, and proven by millions of people ❤️
 
 ## Demo
 
@@ -25,7 +27,7 @@ Go to [addevent.github.io/add-to-calendar-button](https://addevent.github.io/add
 ## Install
 
 The add-to-calendar button snippet is a simple piece of HTML where you fill in your event details dynamically. Here's a full example you can try out in your browser. 
-💥 View more examples and themes on [AddEvent.com](https://www.addevent.com/documentation/add-to-calendar-button)
+💥 View more examples and themes on [AddEvent.com](https://www.addevent.com/documentation/add-to-calendar-button#anchor-themes)
 
 ```
 html
