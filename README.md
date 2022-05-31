@@ -312,7 +312,7 @@ With a suite of services ([Share Events](https://www.addevent.com/solutions/shar
 ## Thank you
 * Thousands of customers providing useful feedback and users using cryptic computer/browser setups where the "Add to Calendar" button also needs to work. ❤️
 * Millions of end-users using and breaking our services on a daily basis ❤️
-* DEV team on AddEvent.com for daily making sure everything is in mint condition
+* DEV team on AddEvent.com (United States, Spain, Romania, Malaysia) for daily making sure everything is in mint condition
 * [Michael Nilsson](https://nilsson.co) Original creator (Denmark)
 
 ## Contact us
