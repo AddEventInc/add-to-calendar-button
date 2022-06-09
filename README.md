@@ -21,7 +21,7 @@ More than 500 mill events have been added to users calendars using AddEvent._
 
 ## Demo
 
-Go to [addevent.github.io/add-to-calendar-button](https://addevent.github.io/add-to-calendar-button/) for a live demo.
+Go to [https://addeventinc.github.io/add-to-calendar-button](https://addeventinc.github.io/add-to-calendar-button) for a live demo.
 
 ![Demo Screenshot](https://cdn.addevent.com/customers/gh-add-to-calendar-button-t2.gif)
 
