@@ -9,15 +9,15 @@ More than 500 mill events have been added to users calendars using AddEvent._
 ### Awesome features
 - Works with **all major calendar services** (Apple, Google Calendar, Outlook, Outlook (online), Office 365, Yahoo)
 - **Use** for websites and apps. For e-mails, use our [add-to-calendar links](https://www.addevent.com/solutions/share-events) on AddEvent.com
-- **Time zone and daylight saving time compatible**. Makes sure date/time is correct across time zones.
+- **Time zone and daylight saving time compatible**. Make sure date/time is correct across time zones.
 - **Supports**: Normal events, recurring events, fluid events, event reminders, include attendees, busy or free state. 
 - **Touch- and user-friendly**: Designed and tested to work with desktops, tablets and mobile devices. Optimized for touch devices, user-friendly and easy to understand calendar options.
 - **Keyboard Accessible**: Fully keyboard accessible. WAI compliant (W3C). Useful to people with disabilities. Accessibility is required by law in many countries.
 - **No dependencies**: Written in pure javascript. No need to install anything on your server. Using backwards compatible technologies to support older browsers (down to IE6).
 - **Legal**: Fully GDPR, CCPA, and LGPD compatible
 - **Design**: Download a predefined theme or customize the design to fit your needs with simple CSS changes
-- **Centralized end-point**: Historically the calendar vendors update/change their calendar software one or twice per year. With AddEvent as a centralized end-point, it's our task to make sure everything is working and not your task. 
-- **Free**: It's free, super realiable, and proven by millions of people ❤️ (we also offer a paid version with awesome technical support)
+- **Centralized end-point**: Historically the calendar vendors update/change their calendar software a couple of times per year. With AddEvent as a centralized end-point, it's our task to make sure everything is working and not your task. 
+- **Free**: It's free, super reliable, and proven by millions of people ❤️ (we also offer a paid version with awesome technical support)
 
 ## Demo
 
