@@ -30,7 +30,7 @@ Go to [https://addeventinc.github.io/add-to-calendar-button](https://addeventinc
 The add-to-calendar button snippet is a simple piece of HTML where you fill in your event details dynamically. Here's a full example you can try out in your browser. 
 💥 View more examples and themes on [AddEvent.com](https://www.addevent.com/documentation/add-to-calendar-button#anchor-themes)
 
-```
+```html
 html
 <html>
 <head>
@@ -110,7 +110,7 @@ html
 
 #### Example: Change labels in drop-down
 
-```
+```html
 <html>
 <head>
 
@@ -150,7 +150,7 @@ window.addeventasync = function(){
 
 #### Example: Remove AddEvent from the drop-down
 
-```
+```html
 <html>
 <head>
 
@@ -195,7 +195,7 @@ window.addeventasync = function(){
 
 #### Example: No CSS. Unstyled button
 
-```
+```html
 <html>
 <head>
 
@@ -235,7 +235,7 @@ to the button code
 
 #### Example: Show options drop-down on mouseover
 
-```
+```html
 <html>
 <head>
 
@@ -270,7 +270,7 @@ window.addeventasync = function(){
 
 #### Example: Sort order of drop-down options
 
-```
+```html
 <html>
 <head>
 
@@ -312,7 +312,7 @@ With a suite of services ([Share Events](https://www.addevent.com/solutions/shar
 ## Thank you
 * Thousands of customers providing useful feedback and users using cryptic computer/browser setups where the "Add to Calendar" button also needs to work. ❤️
 * Millions of end-users using and breaking our services on a daily basis ❤️
-* DEV team on AddEvent.com (United States, Spain, Romania, Malaysia) for daily making sure everything is in mint condition
+* DEV team on AddEvent.com (United States, Spain, Denmark, Romania, Malaysia) for daily making sure everything is in mint condition
 * [Michael Nilsson](https://nilsson.co) Original creator (Denmark)
 
 ## Contact us
