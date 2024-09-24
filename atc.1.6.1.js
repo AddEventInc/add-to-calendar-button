@@ -75,7 +75,6 @@ var addeventatc = function(){
 
 						items[d].style.visibility = 'visible';
 						items[d].setAttribute('aria-haspopup', 'true');
-						items[d].setAttribute('aria-expanded', 'false');
 						items[d].setAttribute('tabindex', '0');
 						items[d].setAttribute('translate', 'no');
 						items[d].setAttribute('data-loaded', 'true');
@@ -233,7 +232,6 @@ var addeventatc = function(){
 							addeventatc.toogle(items[d],{type:'render',id:button_id});
 
 							// Change default settings
-							items[d].setAttribute('aria-expanded', 'true');
 							items[d].removeAttribute('tabindex');
 							items[d].onkeydown = function(){};
 							items[d].blur = function(){};
@@ -368,7 +366,7 @@ var addeventatc = function(){
 				}catch(e){};
 
 				// Any of the supported services?
-				if(dir == 'outlook' || dir == 'google' || dir == 'yahoo' || dir == 'hotmail' || dir == 'outlookcom' || dir == 'appleical' || dir == 'apple' || dir == 'facebook'){
+				if(dir == 'outlook' || dir == 'google' || dir == 'yahoo' || dir == 'hotmail' || dir == 'outlookcom' || dir == 'office365' || dir == 'appleical' || dir == 'apple' || dir == 'facebook'){
 
 					// Only allowed if click event type
 					if(opts.type == 'click'){
@@ -426,23 +424,23 @@ var addeventatc = function(){
 						for(var a=0;a<dda.length;a+=1){
 
 							// Drop down options
-							if(drop_appleical && dda[a]=='ical' || drop_appleical && dda[a]=='appleical'){drop_cont += '<span class="ateappleical" id="'+fid+'-appleical" role="menuitem" tabindex="-1">'+label_appleical+'</span>';}
-							if(drop_google && dda[a]=='google'){drop_cont += '<span class="ategoogle" id="'+fid+'-google" role="menuitem" tabindex="-1">'+label_google+'</span>';}
-							if(drop_office365 && dda[a]=='office365'){drop_cont += '<span class="ateoffice365" id="'+fid+'-office365" role="menuitem" tabindex="-1">'+label_office365+'</span>';}
-							if(drop_outlook && dda[a]=='outlook'){drop_cont += '<span class="ateoutlook" id="'+fid+'-outlook" role="menuitem" tabindex="-1">'+label_outlook+'</span>';}
-							if(drop_outlookcom && dda[a]=='hotmail' || drop_outlookcom && dda[a]=='outlookcom'){drop_cont += '<span class="ateoutlookcom" id="'+fid+'-outlookcom" role="menuitem" tabindex="-1">'+label_outlookcom+'</span>';}
-							if(drop_yahoo && dda[a]=='yahoo' && !rcrl){drop_cont += '<span class="ateyahoo" id="'+fid+'-yahoo" role="menuitem" tabindex="-1">'+label_yahoo+'</span>';}
+							if(drop_appleical && dda[a]=='ical' || drop_appleical && dda[a]=='appleical'){drop_cont += '<span class="ateappleical" id="'+fid+'-appleical" role="menuitem">'+label_appleical+'</span>';}
+							if(drop_google && dda[a]=='google'){drop_cont += '<span class="ategoogle" id="'+fid+'-google" role="menuitem">'+label_google+'</span>';}
+							if(drop_office365 && dda[a]=='office365'){drop_cont += '<span class="ateoffice365" id="'+fid+'-office365" role="menuitem">'+label_office365+'</span>';}
+							if(drop_outlook && dda[a]=='outlook'){drop_cont += '<span class="ateoutlook" id="'+fid+'-outlook" role="menuitem">'+label_outlook+'</span>';}
+							if(drop_outlookcom && dda[a]=='hotmail' || drop_outlookcom && dda[a]=='outlookcom'){drop_cont += '<span class="ateoutlookcom" id="'+fid+'-outlookcom" role="menuitem">'+label_outlookcom+'</span>';}
+							if(drop_yahoo && dda[a]=='yahoo' && !rcrl){drop_cont += '<span class="ateyahoo" id="'+fid+'-yahoo" role="menuitem">'+label_yahoo+'</span>';}
 							
 							// Facebook event?
 							if(fbevent && dda[a]=='facebook'){
-								if(drop_facebook && dda[a]=='facebook'){drop_cont += '<span class="atefacebook" id="'+fid+'-facebook" role="menuitem" tabindex="-1">'+label_fb_event+'</span>';}
+								if(drop_facebook && dda[a]=='facebook'){drop_cont += '<span class="atefacebook" id="'+fid+'-facebook" role="menuitem">'+label_fb_event+'</span>';}
 							}
 							
 						}
 
 						// Credits
 						if(!addeventatc.getlicense(license)){
-							drop_cont += '<em class="copyx"><em class="brx"></em><em class="frs"><a href="https://www.addevent.com" title="" tabindex="-1" id="'+fid+'-home">AddEvent.com</a></em></em>';
+							drop_cont += '<em class="copyx"><em class="brx"></em><em class="frs"><a href="https://www.addevent.com" title="" id="'+fid+'-home" role="menuitem">AddEvent.com</a></em></em>';
 						}
 
 						// Drop down container
@@ -459,6 +457,7 @@ var addeventatc = function(){
 							nd.className = 'addeventatc_dropdown';
 							nd.setAttribute('aria-hidden', 'true');
 							nd.setAttribute('aria-labelledby', fid);
+							nd.setAttribute('role', 'menu');
 
 							// Set content
 							nd.innerHTML = drop_cont;
@@ -522,7 +521,11 @@ var addeventatc = function(){
 				if(opts.service == 'home'){
 
 					// Service URL
-					service_url = 'https://www.addevent.com';
+					if(window.configAeBaseUrl){
+						service_url = 'https://' + window.configAeBaseUrl;
+					}else{
+						service_url = 'https://www.addevent.com';
+					}
 
 				}else{
 
@@ -530,7 +533,11 @@ var addeventatc = function(){
 					burl = addeventatc.getburl({id:opts.button,facebook:false});
 
 					// Service URL
-					service_url = 'https://www.addevent.com/create/?service=' + opts.service + burl + '&reference=' + ref;
+					if(window.configAeBaseUrl){
+						service_url = 'https://' + window.configAeBaseUrl + '/create/?service=' + opts.service + burl + '&reference=' + ref;
+					}else{
+						service_url = 'https://www.addevent.com/create/?service=' + opts.service + burl + '&reference=' + ref;
+					}
 
 					// Change new window object
 					if(opts.service == 'outlook' || opts.service == 'appleical'){
@@ -540,21 +547,44 @@ var addeventatc = function(){
 						
 						// Override service URL (if on iOS Chrome, Facebook webapp etc)
 						if(addeventatc.usewebcal()){
-							service_url = 'webcal://www.addevent.com/create/?uwc=on&service=' + opts.service + burl + '&reference=' + ref;
+							if(window.configAeBaseUrl){
+								service_url = 'webcal://' + window.configAeBaseUrl + '/create/?uwc=on&service=' + opts.service + burl + '&reference=' + ref;
+							}else{
+								service_url = 'webcal://www.addevent.com/create/?uwc=on&service=' + opts.service + burl + '&reference=' + ref;
+							}
 						}
 
 					}
 
 					// Any "data-id"?
 					var btnfid = obj.getAttribute('data-id');
+					
+					// Any "data-single"?
+					var btnsingle = obj.getAttribute('data-single'), qsgl1 = '', qsgl2 = '';
+
+					// Any queries?
+					if(btnsingle!==null){
+						if(btnsingle == 'true'){
+							qsgl1 = 'single/';
+							qsgl2 = '/single';
+						}
+					}
 
 					// In case there is, override the service_url
 					if(btnfid!==null){
 
 						if(addeventatc.usewebcal()){
-							service_url = 'webcal://www.addevent.com/event/' + btnfid + '+' + opts.service + '/?uwc=on';
+							if(window.configAeBaseUrl){
+								service_url = 'webcal://' + window.configAeBaseUrl + '/event/' + btnfid + '+' + opts.service + '/' + qsgl1 + '?uwc=on';
+							}else{
+								service_url = 'webcal://www.addevent.com/event/' + btnfid + '+' + opts.service + '/' + qsgl1 + '?uwc=on';
+							}
 						}else{
-							service_url = 'https://www.addevent.com/event/' + btnfid + '+' + opts.service;
+							if(window.configAeBaseUrl){
+								service_url = 'https://' + window.configAeBaseUrl + '/event/' + btnfid + '+' + opts.service + qsgl2;
+							}else{
+								service_url = 'https://www.addevent.com/event/' + btnfid + '+' + opts.service + qsgl2;
+							}
 						}
 						
 					}
@@ -587,6 +617,11 @@ var addeventatc = function(){
 					ategl.target = '_blank';
 				}else{
 					ategl.target = '_self';
+				}
+
+				// Target override?
+				if(window.configAeATCTarget){
+					ategl.target = window.configAeATCTarget;
 				}
 
 				// Update href
@@ -668,7 +703,6 @@ var addeventatc = function(){
 					obj.className = obj.className.replace(/\s+/g, ' ');
 
 					// Set arias
-					obj.setAttribute('aria-expanded', 'true');
 					dro.setAttribute('aria-hidden', 'false');
 
 					// Keyboard?
@@ -841,9 +875,6 @@ var addeventatc = function(){
 
 						// Hidden?
 						if(dis !== 'block'){
-
-							// Set aria
-							items[d].setAttribute('aria-expanded', 'false');
 
 							// Set aria
 							dro.setAttribute('aria-hidden', 'true');
@@ -1403,11 +1434,13 @@ var addeventatc = function(){
 		    try{s = e instanceof SVGElement;if(s){e = e.parentNode;}}catch(e){}
 
 		    // Determine whether to close drop down
-		    if(ate_touch_capable){
-		    	clearTimeout(reg_timer);
-		    	reg_timer = setTimeout(function(){addeventatc.hide(e.className);},200);
-		    }else{
-		    	addeventatc.hide(e.className);
+		    if(e){
+			    if(ate_touch_capable){
+			    	clearTimeout(reg_timer);
+				    reg_timer = setTimeout(function(){addeventatc.hide(e.className);},200);
+			    }else{
+			    	addeventatc.hide(e.className);
+			    }
 		    }
 
 		},
